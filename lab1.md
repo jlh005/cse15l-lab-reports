@@ -23,7 +23,7 @@ Then, run some commands after you've connected to the terminal. In my instance, 
 directory which lets you change which directory you want to go to. Typing cd alone just redirects you to the current directory. Typing `cd ~` will change the directory
 to the home directory. `ls -lat` lists all the files in the current directory in order of most recently modified which is what the picture in the next page is showing.
 Not shown are more complicated commands such as the `cp` command which allows you to copy files from one location to another, and the `cat` command which will
-display the contents of a file to the terminal. For instance, cat /home/linux/ieng6/cs15lsp23/public/hello.txt would display the text in the hello.txt file.
+display the contents of a file to the terminal. For instance, `cat /home/linux/ieng6/cs15lsp23/public/hello.txt` would display the text in the hello.txt file.
  
 
 ![Image](Step3.png)
