@@ -51,6 +51,16 @@ And the output, which says it passed the test.
 
 ![Image](code5.png)
 
+Here is the original code that I will fix.
+
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+
 Here's the code that will fix it.
 
 ```
