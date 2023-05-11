@@ -22,23 +22,48 @@ into play here now. Since our message is not blank now, our new message will now
 
 For reverseInPlace, this JUnit test makes the code fail. 
 
-![Image](code4.png)
+```
+   @Test
+   public void testReverseInPlace() {
+      int[] input2 = { 3, 5, 6, 7 };
+      int[] test = { 7, 6, 5, 3};
+      ArrayExamples.reverseInPlace(input2);
+      assertArrayEquals(test, input2);
+   }
+```
+And here is the output you would get when you run the test. 
+
+![Image](code6.png)
+
+However, there is a case where it will pass the JUnit test, which is when there is only one element in the array so the malfunctioning code has nothing to mess up the
+array with.
+
+```
+	@Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+   
+```
+And the output, which says it passed the test.
+
+![Image](code5.png)
 
 Here's the code that will fix it.
 
 ```
 static void reverseInPlace(int[] arr) {
-   int newArr[] = new int[arr.length];
-   for(int i = 0; i < arr.length; i += 1) {
-     newArr[i] = arr[arr.length - i - 1];
+   for (int i = 0; i < arr.length / 2; i++) {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
    }
-   for (int i = 0; i < arr.length; i++) {
-    arr[i] = newArr[i]
-   }
- }
+}
  ```
  This would fix the code because the previous code failed to take into account the elements shifting during the for loop, messing with the reverse operation.
- By creating a new array, this would avoid the shift in elements. Then you just simply copy the new array onto the old one.
+ With this new code, creating a temp variable that saves the current element allows you to account for the shift in elements and thus properly reverse the array.
  
  <h2>PART 3</h2>
  
