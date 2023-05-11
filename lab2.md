@@ -39,12 +39,12 @@ However, there is a case where it will pass the JUnit test, which is when there 
 array with.
 
 ```
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
-	}
+   @Test 
+   public void testReverseInPlace() {
+      int[] input1 = { 3 };
+      ArrayExamples.reverseInPlace(input1);
+      assertArrayEquals(new int[]{ 3 }, input1);
+   }
    
 ```
 And the output, which says it passed the test.
