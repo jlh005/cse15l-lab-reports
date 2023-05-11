@@ -175,3 +175,50 @@ cutting down the size of files.
 This option tells the grep command to only count the number of lines that contain the word.
 
 Here's an example.
+
+```
+$ grep -c "among us" ./technical/plos/journal.pbio.0020052.txt
+
+```
+
+And the output,
+
+```
+$ grep -c "among us" ./technical/plos/journal.pbio.0020052.txt
+0
+```
+
+Sadly, there was not a single line that contained the words, "among us" in the file so it returned the number 0. The -c option is useful when you want to determine how 
+much each text appears in a file.
+
+For another example, I will run the command on a whole directory.
+
+```
+grep -c "terrible" ./technical/911report/*
+
+```
+
+And the output,
+
+```
+$ grep -c "terrible" ./technical/911report/*
+./technical/911report/chapter-1.txt:0
+./technical/911report/chapter-10.txt:1
+./technical/911report/chapter-11.txt:0
+./technical/911report/chapter-12.txt:1
+./technical/911report/chapter-13.1.txt:0
+./technical/911report/chapter-13.2.txt:0
+./technical/911report/chapter-13.3.txt:0
+./technical/911report/chapter-13.4.txt:1
+./technical/911report/chapter-13.5.txt:0
+./technical/911report/chapter-2.txt:0
+./technical/911report/chapter-3.txt:1
+./technical/911report/chapter-5.txt:0
+./technical/911report/chapter-6.txt:0
+./technical/911report/chapter-7.txt:0
+./technical/911report/chapter-8.txt:1
+./technical/911report/chapter-9.txt:0
+./technical/911report/preface.txt:1
+```
+Here it seems that for a couple of files, it contained at most 1 line that contained the text "terrible." The -c option is also useful for determining how much a text appears in an entire directory.
+
