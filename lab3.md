@@ -222,3 +222,9 @@ $ grep -c "terrible" ./technical/911report/*
 ```
 Here it seems that for a couple of files, it contained at most 1 line that contained the text "terrible." The -c option is also useful for determining how much a text appears in an entire directory.
 
+<h2> SOURCE </h2>
+
+For my source, I used ChatGPT and asked it to tell me 4 command line options for the grep command and to tell me what they did.
+The above command options were a result of what ChatGPT gave me as a result of the prompt given.
+
+
