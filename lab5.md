@@ -5,15 +5,15 @@ For this lab, let's assume a student, Student A asked a question on edstem for h
 Title: Having trouble running my bash script
 
 
-What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?
+<b> What environment are you using (computer, operating system, web browser, terminal/editor, and so on)? </b>
 
 I'm using a Windows 11 OS on Visual Stuido Code on the bash terminal.
 
-Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.
+<b> Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”. </b>
 
 I'm trying to make a script that checks the name of a file and returns the file's name as an output. If the file doesn't exist, the output says the file doesn't exist.
 
-Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.
+<b> Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can. </b>
 
 No matter what I do, it always says the file doesn't exist when it does and it says on line 3 I'm missing ']' when I don't think I am. Here's a screenshot of what I'm talking about.
 
