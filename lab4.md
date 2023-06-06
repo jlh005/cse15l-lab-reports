@@ -57,6 +57,10 @@ Then, I use the following inputs to fix the code.
 l, l, l, l, l, r, 2
 
 ```
+Pressing l 5 times will move us to the "1" in index 1 by moving 5 spaces to the right.
+Pressing the r key will go into replace mode (No need for insert mode!)
+then pressing 2 will replace 1 with 2
+
 The code is fixed! We replace 1 with 2.
 
 Now we save the code using
@@ -91,9 +95,16 @@ Then we commit the changes to our fork with a message
 git commit -m "Updated"
 ```
 
-And we're finished!
+But we're not done yet!
 
 ![Image](6.png)
+
+Next let's push our changes with the git push command
+Entering my username and my token that I generated, I've pushed my commit into my repository.
+And we're finished!
+
+![image](https://github.com/jlh005/cse15l-lab-reports/assets/130415535/c44abc27-a182-4295-bb58-44dcbc110353)
+
 
 
 
