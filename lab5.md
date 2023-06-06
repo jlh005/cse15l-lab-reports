@@ -2,7 +2,7 @@
 
 For this lab, let's assume a student, Student A asked a question on edstem for help debugging his code.
 
-Title: Having trouble running my bash script
+<b> Title: </b> Having trouble running my bash script
 
 
 <b> What environment are you using (computer, operating system, web browser, terminal/editor, and so on)? </b>
